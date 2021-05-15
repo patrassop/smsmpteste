@@ -1,0 +1,1037 @@
+<html dir="ltr" xml:lang="pt-br" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<link rel="shortcut icon" href="https://transparencia.pmmp.rj.gov.br//favcon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link href="css/pedroegov.css?s=3" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/pedroegovIE.css" /><![endif]-->
+<link href="css/topoegov.css?s=1" rel="stylesheet" type="text/css" />
+<link href="css/rodapeegov.css?s=1" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+body{
+	background-color: #041E42;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus { outline: thin dotted; outline: none; outline-offset: -2px; }
+html { font-size: 12px }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="js/selectivizr.js"></script>
+<![endif]-->
+<script src="js/util.js" type="text/javascript"></script>
+<script src="js/ajax.js?12" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" src="js/jquery.event.hover-1.0.js"></script>
+<script type="text/javascript" src="js/jquery.nestedAccordion.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$("html").addClass("js");
+$(function() {
+  $.event.special.hover.delay = 800;
+  $.event.special.hover.speed = 400;
+ 
+  $("#side").accordion({
+    event: "click", 
+	activeLink : true,
+	hideMethod : 'slideUp', // 'slideUp', 'hide', 'fadeOut', or custom
+    initShow : "li.current"	
+  });
+  
+    $("html").removeClass("js");
+	            
+});
+</script>
+<link media="screen" rel="stylesheet" href="colorbox/colorbox.css" />
+
+<script src="colorbox/jquery.colorbox.js" type="text/javascript"></script>
+<script>
+			$(document).ready(function(){ 
+			
+			function modalAviso(L,W,H,T){
+					 
+					$("#myIframeAviso").attr('src','');
+					$("#myModalAviso").modal({
+						//backdrop: 'static'
+						});	
+						 
+					$('#myModalAviso').on('shown.bs.modal', function () {
+						
+						 $(this).find('.modal-dialog').css({
+								  										width: W, //probably not needed
+																			 //   height: H, //probably not needed 
+						   });
+						 $(this).find('.modal-body').css({
+							 padding : '0',
+							 margin  : '0',
+							 height: H
+							 });
+						 $(this).find('h4').css({
+							 padding    : '0',
+							 margin     : '0'
+							 });
+					      $(this).find('iframe').css({
+							 height: H
+							 });
+						 $(this).find('.modal-header h4').html(T);						
+						$("#myIframeAviso").attr('src',L);
+					   
+					});
+					 
+					 
+			 }//fim funcao
+						
+				function modal(L,W,H,T){
+					 
+					$("#myIframe").attr('src','');
+					$("#myModalIframe").modal({
+						////backdrop: 'static'
+						});	
+						 
+					$('#myModalIframe').on('shown.bs.modal', function () {
+						
+						 $(this).find('.modal-dialog').css({
+								  										width: W, //probably not needed
+																			 //   height: H, //probably not needed  
+						   });
+						 $(this).find('.modal-body').css({
+							 padding : '0',
+							 margin  : '0',
+							 //height: H
+							 });
+						 $(this).find('h4').css({
+							 padding    : '0',
+							 margin     : '0'
+							 });
+					      $(this).find('iframe').css({
+							 height: H
+							 });
+						 $(this).find('.modal-header h4').html(T);						
+						$("#myIframe").attr('src',L);
+					   
+					});
+					 
+					 
+					 }//fim funcao
+	
+	         $(function(){
+			        var linkar = '';
+					var relw   = '';
+					var relh   = '';
+					var titulo = '';  
+								 modalAviso('avisos.php','','480','Comunicado'); //chama o comunicado				 
+				 			 });	      
+			
+			  	
+			
+			
+			//<![CDATA[  
+			$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});    
+			$(".iframe_all").colorbox({rel: false,iframe:true, title:function(){return $(this).attr("retitpop");}, width:function(){return $(this).attr("rew");}, height:function(){return $(this).attr("reh");}});
+				//]]> 			
+			});
+				
+function AbreJanela(html, largura, altura){
+		
+		w = screen.width;
+        h = screen.height;
+		
+		meio_w = w/2;
+        meio_h = h/2;
+		
+		altura2 = altura/2;
+		largura2 = largura/2;
+		meio1 = meio_h-altura2;
+		meio2 = meio_w-largura2;
+
+window.open(html,"nova_janela","toolbar=no,location=no,location=0,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width="+largura+",height="+altura+", top="+meio1+", left="+meio2+"");void(0);
+
+}		</script>
+<link href="/css/accessibility-buttons.min.css?s=10" rel="stylesheet" type="text/css">
+<style>
+/* CSS used here will be applied after bootstrap.css */
+@media only screen and (max-width : 768px) {
+.logotop { width: 300px; padding-top: 3%; }
+}
+
+@media only screen and (max-width : 600px) {
+.logotop { width: 245px; padding-top: 6%; }
+}
+
+@media only screen and (min-width : 320px) {
+.row.equal-height { display: flex; flex-wrap: wrap; }
+.row.equal-height > [class*='col-'] { display: flex; flex-direction: column; }
+.row.equal-height.row:after,  .row.equal-height.row:before { display: flex; }
+.row.equal-height > [class*='col-'] > .thumbnail,  .row.equal-height > [class*='col-'] > .thumbnail > .caption { display: flex; flex: 1 0 auto; flex-direction: column; }
+.row.equal-height > [class*='col-'] > .thumbnail > .caption > .flex-text { flex-grow: 1; }
+.row.equal-height > [class*='col-'] > .thumbnail > img { width: 100%; height: 200px; /* force image's height */ /* force image fit inside it's "box" */
+-webkit-object-fit: cover; -moz-object-fit: cover; -ms-object-fit: cover; -o-object-fit: cover; object-fit: cover; }
+}
+.thumbnail { border: none; box-shadow: none; min-height: 200px; }
+</style>
+<title>SMS Miguel Pereira</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta property="og:title" content="Transparência Miguel Pereira" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://transparencia.pmmp.rj.gov.br//" />
+<meta property="og:image" content="https://transparencia.pmmp.rj.gov.br//img/logo_face.jpg" />
+<meta property="og:site_name" content="Miguel Pereira" />
+<meta property="og:description" content="Serviços | E-Gov" />
+<meta name="Author" content="" />
+<meta name="Subject" content="Transparência Miguel Pereira" />
+<meta name="Description" content="Transparência Miguel Pereira" />
+<meta name="Keywords" content="Transparência, Miguel Pereira, Rio de Janeiro, Brasil, Educação, Saúde, Serviços E-Gov,nfse, Nota Fiscal Eletrônica, nfs-e, Nota Fiscal de Serviços Eletrônica" />
+<meta name="Language" content="pt-BR" />
+<meta name="revisit-after" content="3 days" />
+<meta name="Distribution" content="GLOBAL" />
+<meta name="Robots" content="index,follow" />
+<meta name="robots" content="noarchive">
+<meta name="globalsign-domain-verification" content="-gjFL8NNLPv7mGbRjvbOhhdbCz2Py11cCKwXv1l3sP" />
+<meta name="google-site-verification" content="UaxopAFg__y7jGDLq0Oimf2X8fmHrL0mU30SiXXzDOA" />
+<!-- Latest compiled and minified CSS -->
+
+<style>
+.modal { overflow: auto !important; }
+* { outline: none; outline: 0; }
+.btn-default { background-color: #E4E1E1; width: 43%; }
+.modal-footer { padding-left: 0; padding-right: 0; border-top: none }
+.col-xs-15,  .col-sm-15,  .col-md-15,  .col-lg-15 { position: relative; min-height: 1px; padding-right: 0; padding-left: 0; min-height: 205px; }
+.btn-block { width: auto }
+.form-control { padding: 0 }
+.col-xs-15 { width: 20%; float: left; }
+.col-xs-3 { width: 40%; }
+.col-xs-2 { width: 27%; }
+.col-xs-2 img { width: 58%; }
+.col-xs-1 { width: 15%; min-height: 189px !important; padding-left: 5px; padding-right: 5px; }
+.nome { padding: 10px; text-align: center; font-weight: bold; }
+.col-xs-1, .col-xs-1 .nome { font-size: 11px }
+.col-xs-3 img { width: 40% }
+.col-xs-1 img { width: 65%; }
+
+@media (min-width: 768px) {
+.col-sm-15 { width: 20%; float: left; }
+}
+
+@media (min-width: 992px) {
+.col-md-15 { width: 20%; float: left; }
+}
+
+@media (min-width: 1200px) {
+.col-lg-15 { width: 20%; float: left; }
+}
+/*	body{background: #CCC;}*/
+*, html { outline: none }
+/* Overlay */
+#simplemodal-overlay { background-color: #000; }
+/* Container */
+#simplemodal-container { height: 360px; width: 600px; color: #bbb; z-index: 10000001; background-color: #333; border: 4px solid #444; }
+#simplemodal-container a.modalCloseImg { background: url(../img/basic/x.png) no-repeat; width: 25px; height: 29px; display: inline; z-index: 3200; position: absolute; top: -15px; right: -16px; cursor: pointer; }
+#simplemodal-container h3 { color: #84b8d9; }
+#basic-modal-content { position: absolute; left: -50%; top: 50%; overflow: scroll; overflow-x: none }
+</style>
+<script>
+	jQuery(function ($) {	
+	$('.basic').click(function (e) {
+		var pagina = $(this).attr("href");
+		ajaxGet(pagina,document.getElementById("basic-modal-content"),true) 
+		var tamw   = $(this).attr("rew")+'px';
+		var tamh   = $(this).attr("reh")+'px';
+		var ML     =  '-'+Math.round($(this).attr("rew")/2).toString()+'px';
+		var MT     =  '-'+Math.round($(this).attr("reh")/2).toString()+'px';
+		console.log(ML);
+		console.log(MT);
+		$('#simplemodal-overlay').css('z-index', '10000');	
+		$('#basic-modal-content').css({width : tamw, height : tamh, 'margin-left' : ML,'margin-top' : MT, 'z-index' : '10001' });       	 
+		$('#basic-modal-content').modal();	   		        
+		       return false;
+			});
+		});
+    </script>
+</head><body>
+<div id="basic-modal-content" style="display:none"></div>
+<style>
+#cercHeader { width: 100%; height: 186px; margin: 0 auto; }
+#top { /*   width: 1000px;*/ height: 186px; margin: 0 auto;  background: #800000	;text-align: center }
+.logo { width: 454px; height: 193px; z-index: 1; float: left; }
+/*MENU*/
+.botoes { padding-top: 15px; }
+.logotop {  display: inline-block; margin-top: 2em; }
+#cercMenu { margin: 0; position: absolute; top: 155px; padding: 0; }
+.menu { width: 1000px; height: 46px; margin: 0 auto; }
+/*.manipulaNav{ margin:0 0 0 39px;}*/
+.menu ul li a { display: block; text-decoration: none; padding: 5px 10px; margin-left: 1px; white-space: nowrap; border-right: 1px solid #5d5d5d; color: #FFF; margin-top: 2px; }
+.cercMenuFormat ul li { display: block; position: relative; float: left; text-align: left; }
+.cercMenuFormat li ul { display: none; }
+.cercMenuFormat ul li a:hover { background: #454545; color: #a2cfec; }
+.cercMenuFormat li:hover ul { display: block; position: absolute; height: auto; opacity: 0.90; -moz-opacity: 0.90; filter: alpha(opacity=90); /*IE*/ background: #595959; -webkit-opacity: 0.90; z-index: 11; }
+.cercMenuFormat li:hover ul a { font: 12px Arial, Helvetica, sans-serif; /* controla o tamanho do sub-menu*/ font-weight: normal; }
+.cercMenuFormat li:hover li { float: none; }
+.cercMenuFormat li:hover a { background: url(/img/menuEfeitoHover.png) repeat-x; font: 14px Arial, Helvetica, sans-serif; color: #FFF; font-weight: normal; }
+.bt_acess { position: absolute; right: 1%; bottom: 10px; }
+#accessibility-contrast { background: #000; color: #fff; border: 1px solid #fff; }
+.contraste { background: #FFF !important; color: #000 !important; border: 1px solid #000 !important; }
+/*.navbar{height:186px}
+.example-8 .navbar-brand {
+    background: url(/img/logo.jpg?s=2) center / contain no-repeat;
+    width: 450px;
+	padding:0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+	
+}*/
+.showVisitante{ position:absolute; top:1%; right:1%; color:#fff}
+</style>
+
+<!--nav class="navbar navbar-inverse navbar-static-top example-8">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-hide" href="#">Brand Text
+        </a>
+      </div>
+      <div id="navbar8" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">          
+        </ul>
+      </div>
+     
+    </div>
+    
+  </nav-->
+
+<div id="cercHeader" class="zeroauto">
+  <div id="top" class="container zeroauto ov" style="position:relative"> <a href="index.html" target="_blank"><img src="assets/images/Logo5.png" width="400" class="img-responsive logotop" alt="Logo" title="Logo" ></a>
+    <div class="showVisitante"></div>
+    <div id="cercMenu">
+      <nav class="menu zeroauto cercMenuFormat" role="navigation" style="    width: auto;   height: auto;">
+        <ul class="manipulaNav" style="margin: 0;">
+          <li><a href="index.html" class="topo-fundo-menu-municipio" style="border:none; font-size:20px" ><i class="fa fa-bars"></i> Página Inicial</a>
+            <ul class="sub-menu" style="    margin-left: 1px;" >
+
+            </ul>
+           
+          <h4> </h4> </li>
+        </ul>
+      </nav>
+    </div>
+  
+  </div>
+</div>
+<main role="main" class="container" style=" background:#fff">
+  <div class="row text-center" style="background:transparent;"><img src="assets/images/4412.png" class="img-responsive" style="display: inline-block; -webkit-box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);" /></div>
+  <div class="row equal-height botoes">
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;"/> <a href="http://170.233.106.105:8080/"> <img src="assets/images/esus.png" width="200";></a>
+        <div class="caption nome">
+          <p class="flex-text">
+            E-SUS PEC 4.0</p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;" /> <a href="https://sisregiii.saude.gov.br/cgi-bin/index"> <img src="assets/images/sisreg.png" width="200";></a>
+        <div class="caption nome">
+          <p class="flex-text">
+           SISREG III </p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;"  /> <a href="https://cartaosus.com.br/cadweb-sus.html"> <img src="assets/images/cartao.png" width="200"; ></a>
+        <div class="caption nome">
+          <p class="flex-text">
+            CADWEB</p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;"/> <a href="https://egestorab.saude.gov.br/"> <img src="assets/images/egestor.png" width="200";></a>
+          <p class="flex-text">
+          	   <div class="caption nome">
+            E-GESTOR        </p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;"  /> <a href="http://cnes.datasus.gov.br/"> <img src="assets/images/cnes.png" width="100"; ></a>
+        <div class="caption nome">
+          <p class="flex-text">
+            CNES     </p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:" class="thumbnail"> <a href="javascript:;"  /> <a href="https://gal.saude.sp.gov.br/gal/"> <img src="assets/images/gal.png" width="100"; align="left"></a>
+        <div class="caption nome">
+          
+          GAL  </p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;"  /> <a href="https://serpara.regulacaosaude.com.br/ser/login"> <img src="assets/images/ser.png" width="150"; align="left"></a>
+        <div class="caption nome">
+          <p class="flex-text">
+            SER          </p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;"  /> <a href="http://portalweb04.saude.gov.br/sinan_net/"> <img src="assets/images/sinan.png" width="150";></a>
+          <p class="flex-text">
+          	   <div class="caption nome">
+            SINAN         </p>
+        </div>
+        </a> </div>
+    </div>
+        <div class="col-xs-6 col-sm-3 col-md-2" >
+      
+      <div style="text-align:center" class="thumbnail"> <a href="javascript:;" /> <a href="http://sipni.datasus.gov.br/si-pni-web/faces/inicio.jsf"> <img src="assets/images/sipni.png" width="100";align="left"></a>
+        <div class="caption nome">
+          <p class="flex-text">
+            SI-PNI          </p>
+        </div>
+        </a>
+      
+
+<!--Fim Geral-->
+
+<footer class="footer">
+  <div class="container"  >
+  	<div class="col-lg-4 col-xs-8">
+                	<br>
+                    <div class="left-text-content" >
+                    	<br>
+                    	<br>
+                    	<br>
+                        <p>Desenvolvido por Informática SMS -
+                        Secretaria Municipal de Saúde de Miguel Pereira - 2021</p> 
+                    </div>
+                </div>
+    <style>
+#rodape-contatos {
+	height: auto;
+	padding: 0!important;
+	width: auto;
+color:red;}
+#rodape-contatos .copy {
+	clear: both;
+	padding: 8px 18px;
+	border-top: #CCC 10px solid;
+	color: #fff;
+background:#041E42;
+	font-size: 22px;
+	position: relative;
+	text-align: center
+}
+.CercNavFooter {
+	width: 998px;
+	height: auto;
+}
+#navFooter ul {
+	margin: 0 0 0 0;
+	float: left;
+}
+#navFooter ul li {
+	display: inline;
+	float: left;
+}
+#navFooter ul li a {
+	font-size: 1em;
+color: #009CDE;
+}
+.navFooterBorda {
+border-right:2px solid #009CDE;
+	height: 10px;
+	margin: 5px 4px 0 4px;
+	float: left;
+}
+#SIC {
+	clear: both;
+	padding: 30px 18px 10px 18px;
+background:#041E42;
+	position: center;
+}
+#SIC .titulo {
+	color: #fff
+}
+#SIC .dados {
+color:red;}
+</style>
+<div class="col-lg-4 col-xs-8">
+                	<br>
+                    
+<script src="/js/accessibility-buttons.min.js?s=1"></script> 
+<script>
+$(function() {
+	$.ajax({
+    url: "goShowLastVisitante.php",
+    type: 'GET',
+    success: function(data) {
+        data = $.parseJSON(data);
+        $('.showVisitante').text(data[0].mensagem);
+    }
+
+});
+accessibilityButtons({
+    font: {
+        nameButtonIncrease: '+A',
+        ariaLabelButtonIncrease: '+A',
+        nameButtonDecrease: '-A',
+        ariaLabelButtonDecrease: '-A'
+    },
+
+    contrast: {
+        nameButtonAdd: 'Contraste',
+        ariaLabelButtonAdd: 'Contraste',
+        nameButtonRemove: 'Contraste',
+        ariaLabelButtonRemove: 'Contraste'
+    }
+});
+
+$('.sub-menu').html('<li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464568091" reltarget="" relresolucao="1278x570" relcod="64" relsub="0" relserv="N" relt="Listagem de todas as Secretarias" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Acesso as Secretarias</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="" relcod="713" relsub="0" relserv="S" relt="Ações da Prefeitura acerca do combate ao Covid-19" reltsub="S" relw="1100" relh="250" relid="29"  title="" style="display:block">Ações Coronavírus</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569471" reltarget="" relresolucao="" relcod="679" relsub="0" relserv="N" relt="Acompanhamento do Orçamento (Saldos)" reltsub="N" relw="1215" relh="570" relid="1"  title="" style="display:block">Acompanhamento do Orçamento (Saldos)</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="" relcod="686" relsub="0" relserv="S" relt="API de Dados" reltsub="S" relw="800" relh="250" relid="27"  title="" style="display:block">API de Dados</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="980x250" relcod="113" relsub="0" relserv="S" relt="BIM (Boletim Informativo do Município)" reltsub="S" relw="980" relh="250" relid="16"  title="" style="display:block">Boletim Informativo do Município</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569417" reltarget="" relresolucao="" relcod="675" relsub="0" relserv="N" relt="Busca de Informações e Quantitativo de Acessos" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Busca de Informações e Quantitativo de Acessos</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569240" reltarget="" relresolucao="" relcod="707" relsub="0" relserv="N" relt="CGM - Controladoria Geral do Município" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">CGM - Controladoria Geral do Município</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569600" reltarget="" relresolucao="" relcod="712" relsub="0" relserv="N" relt="Consulta Chamamento Público" reltsub="N" relw="1267" relh="570" relid="1"  title="" style="display:block">Chamamento Público</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569296" reltarget="" relresolucao="1263x570" relcod="129" relsub="0" relserv="N" relt="Compras (Inexigibilidade e Dispensa de Licitação)" reltsub="N" relw="1263" relh="570" relid="1"  title="" style="display:block">Compras (Inexigibilidade e Dispensa de Licitação)</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="" relcod="703" relsub="0" relserv="S" relt="Concursos e Editais" reltsub="S" relw="800" relh="250" relid="28"  title="" style="display:block">Concursos e Editais</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1180x250" relcod="91" relsub="0" relserv="S" relt="Contratos" reltsub="S" relw="1180" relh="250" relid="6"  title="" style="display:block">Contratos</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1180x250" relcod="128" relsub="0" relserv="S" relt="Despesas, Subvenções e Ordem Cronológica" reltsub="S" relw="1180" relh="250" relid="17"  title="" style="display:block">Despesas, Subvenções, Ordem Cronológica, Execução Orçamentária e Financeira</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464568070" reltarget="" relresolucao="1278x570" relcod="53" relsub="0" relserv="N" relt="Diárias e Passagens" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Diárias e Passagens</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569572" reltarget="" relresolucao="1265x452" relcod="11" relsub="0" relserv="N" relt="Execução Orçamentária Consolidada" reltsub="N" relw="1265" relh="452" relid="1"  title="" style="display:block">Execução Orçamentária Consolidada</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569402" reltarget="" relresolucao="" relcod="685" relsub="0" relserv="N" relt="Fale Conosco" reltsub="N" relw="916" relh="505" relid="1"  title="" style="display:block">Fale Conosco</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464568111" reltarget="" relresolucao="1267x570" relcod="88" relsub="0" relserv="N" relt="Folha de Pagamento (Salário dos Servidores)" reltsub="N" relw="1267" relh="570" relid="1"  title="" style="display:block">Folha de Pagamento (Salário dos Servidores)</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1180x460" relcod="29" relsub="0" relserv="S" relt="Formulários para solicitação de Pedidos no SIC (Físico)" reltsub="S" relw="1180" relh="460" relid="7"  title="" style="display:block">Formulários para solicitações no SIC Físico</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="" relcod="699" relsub="0" relserv="S" relt="Fundo de Previdência de Miguel Pereira" reltsub="S" relw="1278" relh="570" relid="32"  title="" style="display:block">Fundo de Previdência de Miguel Pereira</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569501" reltarget="" relresolucao="" relcod="702" relsub="0" relserv="N" relt="Glossário" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Glossário</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1180x250" relcod="36" relsub="0" relserv="S" relt="Gráficos Estatísticos (Pedidos de Informação)" reltsub="S" relw="1180" relh="250" relid="13"  title="" style="display:block">Gráficos Estatísticos (Pedidos de Informação)</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://www.tce.rj.gov.br/iegm" reltarget="_blank" relresolucao="" relcod="711" relsub="0" relserv="N" relt="Índice de Efetividade da Gestão Municipal Fonte TCE RJ" reltsub="N" relw="1278" relh="505" relid="1"  title="" style="display:block">Índice de Efetividade da Gestão Municipal Fonte TCE RJ</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://www.tce.rj.gov.br/mapa-itai/home/1/2017" reltarget="_blank" relresolucao="" relcod="710" relsub="0" relserv="N" relt="Índice de Transparência e Acesso à Informação (ITAI) Fonte TCE RJ" reltsub="N" relw="1278" relh="505" relid="1"  title="" style="display:block">Índice de Transparência e Acesso à Informação (ITAI) Fonte TCE RJ</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1180x250" relcod="17" relsub="0" relserv="S" relt="Leis" reltsub="S" relw="1180" relh="250" relid="8"  title="" style="display:block">Leis</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569507" reltarget="" relresolucao="" relcod="726" relsub="0" relserv="N" relt="Licenças Ambientais Expedidas" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Licenças Ambientais Expedidas</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="" relcod="106" relsub="0" relserv="S" relt="Licitações" reltsub="S" relw="1150" relh="250" relid="15"  title="" style="display:block">Licitações</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/organograma_mapa.php" reltarget="" relresolucao="1024x515" relcod="674" relsub="0" relserv="N" relt="Mapa do Site" reltsub="N" relw="1024" relh="515" relid="1"  title="" style="display:block">Mapa do Site</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="" relcod="680" relsub="0" relserv="S" relt="Multas de Trânsito" reltsub="S" relw="1128" relh="250" relid="26"  title="" style="display:block">Multas de Trânsito</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/ver20191206/form.jsp?sys=LAI&action=openform&formID=464569310&align=0&mode=-1&goto=-1&filter=&scrolling=no" reltarget="" relresolucao="" relcod="765" relsub="0" relserv="N" relt="Obras" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Obras</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="880x250" relcod="8" relsub="0" relserv="S" relt="Orçamentos (LOA, LDO e PPA)" reltsub="S" relw="880" relh="250" relid="2"  title="" style="display:block">Orçamentos (LOA, LDO e PPA)</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569503" reltarget="" relresolucao="" relcod="40" relsub="0" relserv="N" relt="Perguntas e Respostas" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Perguntas e Respostas</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/tmp/PortalServices/privacidade.pdf" reltarget="_blank" relresolucao="" relcod="766" relsub="0" relserv="N" relt="Política de Privacidade" reltsub="N" relw="1278" relh="505" relid="1"  title="" style="display:block">Política de Privacidade</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1160x250" relcod="16" relsub="0" relserv="S" relt="Prestação de Contas" reltsub="S" relw="1160" relh="250" relid="11"  title="" style="display:block">Prestação de Contas</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569539" reltarget="" relresolucao="" relcod="708" relsub="0" relserv="N" relt="Prestação de Contas - TCE" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Prestação de Contas - TCE</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569563" reltarget="" relresolucao="" relcod="764" relsub="0" relserv="N" relt="Programas, Projetos e Ações" reltsub="N" relw="1267" relh="570" relid="1"  title="" style="display:block">Programas, Projetos e Ações</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464570609" reltarget="" relresolucao="" relcod="767" relsub="0" relserv="N" relt="Quantitativo de visitas do Portal da Transparência" reltsub="N" relw="1267" relh="570" relid="1"  title="" style="display:block">Quantitativo de visitas do Portal da Transparência</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="980x465" relcod="97" relsub="0" relserv="S" relt="Receitas" reltsub="S" relw="980" relh="465" relid="14"  title="" style="display:block">Receitas</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="Decreto_Municipal.pdf" reltarget="" relresolucao="980x505" relcod="122" relsub="0" relserv="N" relt="Regulamentação da LAI pelo Poder Executivo" reltsub="N" relw="980" relh="505" relid="1"  title="" style="display:block">Regulamentação da LAI pelo Poder Executivo</a></li><li><a href="javascript:;"  rellog="" class="modaln" rel="tooltip" rellink="" relL="#" reltarget="" relresolucao="1180x250" relcod="164" relsub="0" relserv="S" relt="Saúde" reltsub="S" relw="1180" relh="250" relid="20"  title="" style="display:block">Saúde</a></li><li><a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=10062" reltarget="" relresolucao="1267x570" relcod="28" relsub="0" relserv="N" relt="Sistema de Informação ao Cidadão e-SIC" reltsub="N" relw="1267" relh="570" relid="1"  title="" style="display:block">Sistema de Informação ao Cidadão e-SIC</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/ver20191206/form.jsp?sys=LAI&action=openform&formID=464570604&align=0&mode=-1&goto=-1&filter=&scrolling=no" reltarget="" relresolucao="" relcod="761" relsub="0" relserv="N" relt="Termo de Parceria" reltsub="N" relw="1278" relh="570" relid="1"  title="" style="display:block">Termo de Parceria</a></li><li><a href="javascript:;"  rellog="N" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/tmp/PortalServices/TERMO_PERMISSAO_USO_001_18-APAE-FAETEC.pdf" reltarget="_blank" relresolucao="" relcod="664" relsub="0" relserv="N" relt="Termo de Permissão de Uso" reltsub="N" relw="1278" relh="505" relid="1"  title="" style="display:block">Termo de Permissão de Uso</a></li>');
+var busca = '<a href="javascript:;"  rellog="S" class="modaln" rel="tooltip" rellink="" relL="https://transparencia.pmmp.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=464569417" reltarget="" relresolucao="" relcod="675" relsub="0" relserv="N" relt="Busca de Informações e Quantitativo de Acessos" reltsub="N" relw="1278" relh="570" relid="1"   id="buscatopo" style="border:none; font-size:16px"><i class="fa fa-search" style="color:#fff"></i> Busca</a>'
+$('#busca').html(busca);
+$('#buscatopo').addClass('topo-fundo-menu-municipio');
+
+$('.modaln').click(function(ev) {
+    ev.preventDefault();
+    var IDf = '_' + Math.random().toString(36).substr(2, 9);
+    var vermodal = '#myModalIframe' + IDf;
+    var iframe = 'iframe' + IDf;
+    var monta = '';
+
+
+    var N = $(this).attr('rell'); //nivel 
+    var reltarget = $(this).attr('reltarget');
+    var reglog = $.trim($(this).attr("rellog"));
+    if (reglog != 'S') {
+        console.log('relog', reglog);
+        var token = 'teste';
+        $.ajax({
+            url: "golog.php",
+            type: 'POST',
+            data: {
+                alt: $(this).attr("relcod")
+            },
+            success: function(data) {
+                console.log("The returned data", data);
+            }
+
+        });
+
+    }
+
+
+    if (reltarget == '_blank') {
+        window.open(N, reltarget);
+        return false;
+    }
+
+    var showServ = $.trim($(this).attr("relserv")) == 'S' ? 'show' : 'hidden';
+    if (showServ == 'show') {
+        $.ajax({
+            url: "goShowLast.php",
+            data: {
+                cod: $(this).attr("relcod")
+            },
+            type: 'GET',
+            success: function(data) {
+                data = $.parseJSON(data);
+                $('.S' + IDf).text(data[0].mensagem);
+            }
+
+        });
+
+
+    }
+
+
+    monta += '<div class="modal fade" id="myModalIframe' + IDf + '" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">';
+    monta += '	<div class="modal-dialog">';
+    monta += '	  <div class="modal-content"> ';
+    monta += '	   <div class="modal-header">';
+    var Resolucao = $(this).attr('relresolucao');
+    if (Resolucao)
+        monta += '<div style="position: absolute;  margin: 4px 0; font-size: 11px; color: #f3f3f3;">(Resolução Mínima: ' + Resolucao + ')</div>';
+    monta += '		  <button type="button" class="close custom-close"  data-original-title="Clique aqui para Fechar" rel="tooltip" >&times;</button>';
+    monta += '		  <h4></h4>';
+    monta += '		</div> ';
+    monta += '		<div class="modal-body"><div class="showServ ' + showServ + ' S' + IDf + '" ></div>';
+    if (N != '#')
+        monta += '			 <div class="row"> ';
+    else
+        monta += '			 <div class="container-fluid" style="padding-top:5px;height: 100%; overflow: auto; overflow-x: hidden;}"> ';
+    monta += '			   <div class="col-xs-12 res_iframe"></div>';
+    monta += '			 </div>';
+    monta += '		</div> ';
+    monta += '	  </div>';
+    monta += '	</div>';
+    monta += '</div>  ';
+
+    $('body').append(monta);
+
+    var L = $(this).attr('relL');
+    var W = $(this).attr('relw');
+    var H = $(this).attr('relh');
+    var ID = $(this).attr('relid');
+    var T = $(this).attr('relt'); //titulo
+    var idsub = $(this).attr('relsub'); //titulo
+    var tsub = $(this).attr('reltsub'); //tsub
+    var reltarget = $(this).attr('reltarget');
+    var cod = $(this).attr('relcod');
+
+    //   console.log(N);
+    //$("#myIframe").attr('src','');
+    $(vermodal).modal({
+
+    });
+
+    $(vermodal).on('shown.bs.modal', function(e) {
+        //chama();
+
+
+        $(".custom-close").on('click', function() {
+            $(vermodal).modal('hide');
+        });
+
+
+        var button = e.relatedTarget;
+        if ($(button).hasClass('no-modal')) {
+            e.stopPropegation();
+        }
+        $('a').tooltip("hide");
+        $(this).find(".res_iframe").html('<iframe src="" width="100%" class="' + iframe + '"></iframe>');
+
+        $(this).find(".res_iframe").css({
+            height: '100%'
+        });
+        $(this).find('.modal-dialog').css({
+                            width: W, //probably not needed
+                        //height: H, //probably not needed 
+        });
+        $(this).find('.modal-body').css({
+            padding: '0',
+            margin: '0',
+            //  height: H
+        });
+        $(this).find('h4').css({
+            padding: '0',
+            margin: '0'
+        });
+        $(this).find('iframe').css({
+            height: H
+        });
+
+        $(this).find('.modal-header h4').html(T);
+
+        if (N != '#') {
+            if ($('.accessibility-contrast')[0] || $('.accessibility-font')[0]) {
+                var contraste = false;
+                var fonte = false;
+
+                if ($('.accessibility-contrast')[0])
+                    contraste = true;
+
+                if ($('.accessibility-font')[0])
+                    fonte = true;
+
+                if (L.indexOf("?") >= 0) {
+                    $(this).find('iframe').attr('src', L + '&access=' + contraste + '-' + fonte);
+                    //  console.log('reulst ' +L+'&access='+contraste+'-'+fonte);
+                } else {
+                    $(this).find('iframe').attr('src', L + '?access=' + contraste + '-' + fonte);
+                    //   console.log('reulst ' +L+'?access='+contraste+'-'+fonte);
+                }
+
+            } else
+                $(this).find('iframe').attr('src', L);
+
+
+        } else {
+            $(this).find(".res_iframe").load("result_sub.php", {
+                "sub": ID,
+                "idf": vermodal,
+                "idsub": idsub,
+                "tsub": tsub,
+                "cod": cod
+            })
+
+            console.log('reulst');
+        }
+
+    });
+
+    $(vermodal).on('hidden.bs.modal', function() {
+        $(this).remove();
+        console.log('fechou');
+    });
+
+
+
+}); //fim funcao
+	
+	
+	
+})
+
+function init(json) {	
+	for(key in json) {
+		var item = json[key];
+		$('#nomeresp').text(item.nome);
+		$('#localizacao').text(item.campo1);
+		$('#funcionamento').text(item.campo2);
+		$('#telefone').text(item.campo3);
+		$('#email').text(item.campo4);
+		$('#tecnico').text(item.campo5);
+		$('#tecnicoesic').text(item.campo6);
+		$('#localizacaoesic').text(item.campo7);
+		$('#telesic').text(item.campo8);
+	}
+}
+
+var dados = [{"campo1" : "Rua Prefeito Manoel Guilherme Barbosa, 375, centro, Miguel Pereira/RJ, Cep: 26900-000", "campo2" : "12h às 18h", "campo3" : "(24) 2483-9232", "campo4" : "sic@pmmp.rj.gov.br", "campo5" : "Orlando Pereira Junior - (24) 2483-9227", "campo6" : "Solange Maria Xavier da Silva", "campo7" : "Rua Prefeito Manoel Guilherme Barbosa, 375, centro, Miguel Pereira/RJ, Cep: 26900-000", "campo8" : "(24) 2483-9232", "nome" : "Solange Maria Xavier da Silva"}]
+;
+init(dados);</script> 
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>  </div>
+</footer>
+<script type="text/javascript">
+		$(function () {
+			
+			$('html').on('mouseup', function(e) {
+				if(!$(e.target).closest('.popover').length) {
+					$('.popover').each(function(){
+						$(this.previousSibling).popover('hide');
+					});
+				}
+			});
+			$('body').on('click', function (e) {
+				$('[data-toggle="popover"]').each(function () {
+					//the 'is' for buttons that trigger popups
+					//the 'has' for icons within a button that triggers a popup
+					if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+						$(this).popover('hide');
+					}
+				});
+			});
+			$('[rel="tooltip"]').tooltip({trigger:'hover' }).click(function(e) {
+					jQuery(document).one("click", function() {
+							$('.iframe_interna').popover('hide');
+							$('.iframe_interna').tooltip('hide');
+					}); 
+				});
+			
+			/*$('.iframe_interna').popover({
+                    html: true,
+                    trigger: 'manual'
+                }).click(function(e) {
+                    $(this).popover('show');
+                    $('.popover-title').append('<button type="button" class="close">&times;</button>');
+                    $('.close').click(function(e){
+                        $('.iframe_interna').popover('hide');
+						$('.iframe_interna').tooltip('hide');
+                    });
+                    e.preventDefault();
+                });*/
+				
+				$(".ModalBusca").click(function(){
+					
+					$("#myModalBusca").modal({
+						//backdrop: 'static'
+						});					 
+					$('#myModalBusca').on('shown.bs.modal', function () {		
+					  // $( "#usrdoc" ).focus();
+					   $("#usrdoc").val("");
+					});
+					<div class="left-text-content" align="center">
+                    
+                        <p>Desenvolvido por Informática SMS -
+                        Secretaria de Saúde de Miguel Pereira - 2021</p> 
+                    </div>
+                </div>
+					
+				}); //fim modalbusca
+				
+				$(".ModalIframe").click(function(){
+					var linkar = $(this).attr('rellink');
+					var relw   = $(this).attr('rew');
+					var relh   = $(this).attr('reh');
+					var titulo = $(this).attr('ret');
+					$("#myIframe").attr('src','');
+					$("#myIframe").attr('src','');
+					$("#myModalIframe").modal({
+						//backdrop: 'static'
+						});	
+						 
+					$('#myModalIframe').on('shown.bs.modal', function () {
+						
+						 $(this).find('.modal-dialog').css({
+								  width:relw, //probably not needed
+								  height:relh, //probably not needed 
+						   });
+						 $(this).find('.modal-body').css({
+							 padding : '0',
+							 height: relh
+							 });
+						 $(this).find('h4').css({
+							 padding    : '0',
+							 margin     : '0'
+							 });
+					      $(this).find('iframe').css({
+							 height: relh
+							 });
+						 $(this).find('.modal-header h4').html(titulo);		
+						 
+						  if ($('.accessibility-contrast')[0] || $('.accessibility-font')[0]) {	
+									       var contraste = false;
+										   var fonte = false;
+										   
+									 	   if ($('.accessibility-contrast')[0])
+										   contraste = true;
+										   
+										   if ($('.accessibility-font')[0])
+										   fonte = true;							   
+															   
+										   if (linkar.indexOf("?") >= 0)						 					
+										   $("#myIframe").attr('src',linkar+'&access='+contraste+'-'+fonte);
+										   else
+										    $("#myIframe").attr('src',linkar+'?access='+contraste+'-'+fonte);
+										   
+										  // console.log('&access='+contraste+'-'+fonte);
+										   
+									    }
+										else
+										$("#myIframe").attr('src',linkar);
+										
+														
+						//$("#myIframe").attr('src',linkar);
+					   
+					});
+					
+				}); //fim modalbusca
+				
+				$("#myBtnE").click(function(){
+					var doc = $("#usrdoc").val();
+					if ($.trim(doc) =="") {
+					alert('Digite a palavra para pesquisa');
+					 $( "#usrdoc" ).focus();
+					return false;
+					}
+					
+					if ($.trim(doc).length <3) {
+					alert('Mínimo 3 caracteres');
+					 $( "#usrdoc" ).focus();
+					return false;
+					}
+					
+					$("#frameDOC").html('<center><i class="fa fa-refresh fa-spin"></i> Carregando...</center>');				
+					
+					$("#myModal_result").modal({
+						//backdrop: 'static'
+						});
+					$('#myModal_result').on('hidden.bs.modal', function () {
+						$("#usrdoc").val("");
+					 $( "#usrdoc" ).focus();
+					})
+					$("#frameDOC").load("result.php", {"DOC":doc})
+					
+					
+					
+				}); //fim myBtnE	
+				
+				
+				
+		});
+		</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77493210-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-77493210-1');
+</script>
+<div class="modal fade" id="myModalsic"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"> <span>SIC</span>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <!-- Modal header -->
+      <div class="modal-body">
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="col-md-12"> </div>
+        </div>
+        <!-- fim container fluid --> 
+      </div>
+      <!-- Modal body --> 
+    </div>
+    <!-- dim Modal contnt--> 
+  </div>
+  <!-- fim Modal dialog --> 
+</div>
+<!-- fim Modal -->
+
+<style>						
+		    .modal-content{ border-radius:0}
+			.modal-header{padding:8px 15px}
+			.modal-header, h4, .close {  background-color: red;    border-radius:0;  color:white !important; text-align: center; font-size: 20px; }	
+				
+			
+			@media (min-width: 768px) {
+				.modal-dialog {
+					width: 90%;
+				}				
+			}
+			
+			@media (min-width: 800px) {
+				.modal-dialog {
+					width: 85%;
+				}				
+			}
+			
+			
+			@media (min-width: 1024px) {
+				.modal-dialog {
+					width: 80%;
+				}				
+			}
+			
+			@media (min-width: 1220px) {
+				.modal-dialog {
+					width: 45%;
+				}				
+			}
+			
+			#myModal_edital .modal-dialog,
+			#myModal_edital .modal-content {
+				/* 80% of window height */
+				height: 90%;
+			}
+			
+			#myModal_edital .modal-body {
+				/* 100% = dialog height, 120px = header + footer */
+				max-height: calc(100% - 100px);
+				overflow: scroll;
+				overflow-y: scroll;
+			}
+			
+			.panel-heading h3,.panel-heading h5{ color:#fff }
+ .showServ { position:absolute; top: 0; right:1%; color:#666; z-index:10000; display:none}
+			.showServ.show { display:block}
+			.showServ.hidden { display:none}
+			  </style>
+<div class="modal fade " id="myModalBusca" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 8px 10px;">
+        <button type="button" class="close" data-dismiss="modal" data-original-title="Fechar" rel="tooltip"  popover-trigger="hide">&times;</button>
+        <h4>Busca de Informações</h4>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+        <div class="form-group">
+          <label for="usrdoc">Digite abaixo o que deseja consultar no Portal da Transparência, logo após, clique no botão "Consultar".</label>
+          <input type="text" class="form-control" id="usrdoc" autocomplete="off">
+        </div>
+        <div class="modal-footer">
+
+          <center>
+            <button type="button" class="btn btn-default pull-left" id="myBtnE" rel="tooltip" popover-trigger="hide" title="Clique aqui para Consultar"><span class="glyphicon glyphicon-search"></span> Consultar</button>
+            <button type="button" class="btn btn-default  pull-right" data-dismiss="modal" rel="tooltip" popover-trigger="hide" title="Clique aqui para Fechar"><span class="glyphicon glyphicon-remove"></span> Fechar</button>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fim modal busca-->
+
+<div class="modal fade" id="myModal_result" role="dialog">
+  <div class="modal-dialog" style="width:50%;"> 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body" id="frameDOC" style="height:100%"> </div>
+      <div class="modal-footer">
+        <center>
+          <button type="button" class="btn btn-default" data-dismiss="modal" data-original-title="Clique aqui para Fechar" rel="tooltip"  popover-trigger="hide"><span class="glyphicon glyphicon-remove"></span> Fechar</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModalIframe" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+  <div class="modal-dialog"> 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close custom-close"  data-original-title="Clique aqui para Fechar" rel="tooltip" >&times;</button>
+        <h4></h4>
+      </div>
+      <div class="modal-body"> </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModalAviso" role="dialog">
+  <div class="modal-dialog"> 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"  data-original-title="Clique aqui para Fechar" rel="tooltip"  popover-trigger="hide">&times;</button>
+        <h4></h4>
+      </div>
+      <div class="modal-body" style="-webkit-overflow-scrolling:touch; ">
+        <iframe src="" width="100%" id="myIframeAviso"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog"> 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"  data-original-title="Clique aqui para Fechar" rel="tooltip"  popover-trigger="hide">&times;</button>
+        <h4></h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="" width="100%" id="myIframe"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
